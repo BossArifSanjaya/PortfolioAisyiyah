@@ -1,0 +1,257 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #128c7e;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #fff;
+  display: flex;
+  justify-content:center;
+}
+
+.logo {
+  width: 100px;
+}
+.blogo {
+  background-color: #ffffff;
+  max-width: 100px;
+  border-radius: 50%;
+  float: inline-start;
+}
+.judul{
+  padding: auto;
+}
+
+h1 {
+  margin: 25px;
+  font-size: 32px;
+}
+
+nav {
+  background-color: #0b665c;
+  padding: 0;
+  text-align: center;
+  width:auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+}
+.aktif {
+  background-color: #48ff0087;
+  border-radius: 5px;
+}
+
+.aktif :hover {
+  cursor: default;
+}
+
+.dropdown {
+  padding: 0px;
+  margin: 0px;
+  z-index: 3;
+}
+.dropdown li {
+  padding: 10px;
+  margin: 0px;
+}
+.dropdown li:hover {
+  background-color: #4bb301;
+  border-radius: 5px;
+}
+.dropdown-content{
+  /*display: none;*/
+  position: absolute;
+  width: 110px;
+  background-color: #0b665c;
+  margin-top: 10px;
+  margin-left: -10px;
+  border-radius: 0px 0px 10px 10px;
+  z-index:auto ;
+  transform:translateY(-3em);
+  transition:all 1s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.dropdown-content li:hover {
+  background-color: #4bb301;
+  border-radius: 10px;
+}
+ .dropdown-content li {
+  padding: 5px;
+ }
+
+.dropdown li:hover > .dropdown-content {
+  /*display: block;*/
+  background-color: #0b665c;
+  transform: translateY(0);
+  transition-delay: 0s, 0s, 0,3s;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+marquee {
+  background-color: #128c7e;  
+  color: #fff;
+  font-family: 'Lucida Sans';
+  z-index: -2;
+}
+section {
+  padding: 20px;
+}
+.isi1 p {
+  text-align: justify;
+  font-family: 'lora';
+}
+.isi1 {
+  float: left;
+  width:49%;
+  padding-right: 1%;
+}
+
+.isi2 {
+  width: 50%;
+  height:auto;
+  display:flex;
+  float: inline-end;
+  overflow: visible;
+}
+
+.isi2 img{
+  width:100%;
+  height:auto;
+}
+#isi1 iframe{
+  overflow:visible;
+  border: 100px; 
+  width: 100%;
+  height: 710px; 
+}
+
+footer {
+  background-color: #128c7e;
+  padding: 10px;
+  color: #fff;
+  width: 100%;
+  position:relative;
+  display: flex;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+.menu-icon {
+  display:none;
+  flex-direction: column;
+  height:  20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-icon input:checked ~ span:nth-child(2){
+  transform: rotate(45deg) translate(-2px, -1px);
+}
+
+.menu-icon span:nth-child(2){
+  transform-origin: 0 0;
+}
+
+.menu-icon input:checked ~ span:nth-child(4){
+  transform: rotate(-45deg) translate(-1px, -1px);
+}
+
+.menu-icon span:nth-child(4){
+  transform-origin: 0 100%;
+}
+
+.menu-icon input:checked ~ span:nth-child(3){
+  opacity: 0;
+  transform: scale(0);
+}
+
+.menu-icon input {
+  position: absolute;
+  width:40px;
+  height: 28px;
+  right: 1px;
+  top:0px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+.menu-icon span {
+  display: block;
+  width: 28px;
+  height:3px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.kontak {
+  /* width: 500px; */
+  width: auto;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 #999;
+  position: absolute;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+form {
+  margin: 35px;
+}
+.input-field {
+  /* width: 400px; */
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #777;
+  border-radius: 4px;
+  outline: none;
+}
+.textarea {
+  height: 150px;
+  padding-top: 10px;
+}
+
+.tombol {
+  border-radius: 5px;
+  color:#fff;
+  margin-top: 18px;
+  padding: 10px;
+  background-color: #47c35a;
+  font-size: 12px;
+  border:none;
+  cursor:pointer;
+  display: flex;  
+}
