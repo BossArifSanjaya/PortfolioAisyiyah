@@ -24,7 +24,7 @@ if (pilih == "Beranda"){
     document.getElementById('isi1').innerHTML = "<iframe src='Portofolio/Eksternal.html'></iframe>";
     document.getElementById('isi2').innerHTML = "<img src='Gambar/Eksternal.png'></img>";
 }else if (pilih == "Umum"){
-    document.getElementById('isi1').innerHTML = "<iframe src='Portofolio/Program Umum.html'></iframe>";
+    document.getElementById('isi1').innerHTML = "<iframe src='Portofolio/Program umum.html'></iframe>";
     document.getElementById('isi2').innerHTML = "<img src='Gambar/Logo Aisyiyah Vector.png'></img>";
 }else if (pilih == "Bidang"){
     document.getElementById('isi1').innerHTML = "<iframe src='Portofolio/Program Bidang.html'></iframe>";
